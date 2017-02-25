@@ -1,14 +1,48 @@
 body
 {
-  background-color: #111111;
-  margin-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: "Open Sans";
-  font-size: 24px;
-  color: #ffffff;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-  line-height: 26.4px;
+background-color: black;
+color: white;
+font-family: "Open Sans";
+font-size: 18px;
+margin-left: 200px;
+margin-right: 200px;
+}
+#container
+{
+  position:relative;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-left: -200px;
+  margin-right: -200px;
+}
+# image
+{
+  position:absolute;
+  left:0;
+  top:0;
+}
+#text
+{
+  z-index:100;
+  position:relative;
+  color:white;
+  font-size:24px;
+  font-family:"Open Sans";
+  font-weight:bold;
+  left: 250px;
+  top:-70px;
+}
+#writing
+{
+  z-index:100;
+  position:relative;
+  color:white;
+  font-size:24px;
+  font-family:"Open Sans";
+  font-weight:bold;
+  left: 960px;
+  top:0px;
 }
