@@ -15,7 +15,7 @@
   font-family: "Open Sans";
   font-size: 36px;
   color: #555555;
-  padding: 40px;
+  padding: 20px;
 }
 body
 {
@@ -39,4 +39,9 @@ left: 0;
 right: 0;
 bottom: 10px;
 text-shadow: 2px 2px white;
+}
+#subtitle
+{
+  font-size: 12px;
+  font-style: italic;
 }
