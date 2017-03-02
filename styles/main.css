@@ -9,6 +9,10 @@
   font-family:"Open Sans";
   font-weight:bold;
 }
+col-md-10
+{
+  padding: 100px;
+}
 .headrow
 {
   background-color: black;
@@ -50,4 +54,15 @@ text-shadow: 2px 2px white;
 {
   font-size: 12px;
   font-style: italic;
+}
+.blogpost
+{
+  color: white;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  width: 70%;
+  align: center;
+  padding-left: 200px;
+  padding-right: 200px;
 }
