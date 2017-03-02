@@ -17,6 +17,12 @@
   color: #555555;
   padding: 20px;
 }
+.rounded
+{
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
 body
 {
  width: 100%;
