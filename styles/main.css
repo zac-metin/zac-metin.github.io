@@ -111,3 +111,11 @@ text-shadow: 2px 2px white;
     background-size: cover;
   }
 }
+@media (min:width: 1700px)
+{
+  .container-full
+  {
+    padding: 0px;
+    margin: 0px;
+  }
+}
