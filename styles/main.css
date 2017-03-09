@@ -95,15 +95,18 @@ text-shadow: 2px 2px white;
     width: 100%;
     padding: 0px;
     margin: 0px;
-    background-size: cover;
   }
 }
-@media (min:width: 1700px)
+@media (min-width: 1400px)
 {
   .container-full
   {
     padding: 0px;
     margin: 0px;
+  }
+  img
+  {
+    width: 100%
   }
 }
 .container-full
