@@ -104,14 +104,15 @@ text-shadow: 2px 2px white;
     padding: 0px;
     margin: 0px;
   }
-  img
-  {
-    width: 100%
-  }
+
 }
 .container-full
 {
   padding: 0px;
   margin: 0px;
   width: 100%;
+}
+img
+{
+  width: 100%
 }
