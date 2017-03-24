@@ -1,0 +1,34 @@
+{
+    "story":
+    {
+        "scenes":
+        [
+            {
+                "uid": "scene-0",
+                "name": "My first scene",
+                "slug": "my-first-scene",
+                "description": "This is my first scene",
+
+                "media":
+                {
+                    "uid": "media-0",
+                    "type": "image",
+
+                    "source":
+                    {
+                        "format": "equi",
+                        "url": "equi.jpg"
+                    }
+                }
+            }
+        ]
+    },
+    "camera":
+   {
+       "parallax": 0,
+       "yaw": { "default" : 0, "min": -100, "max": 100 },
+       "pitch": { "default" : 0, "min": -90, "max": 180 },
+       "roll": { "default" : 0, "min": 0, "max": 0 },
+       "fov": { "default" : 90, "min": 70, "max": 110 }
+   }
+}
