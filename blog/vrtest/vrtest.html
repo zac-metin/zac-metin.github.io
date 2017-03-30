@@ -1,39 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>ForgeJS tutorial</title>
-        <meta charset="utf-8">
-        <style>
+<head>
+    <title>Basic Breakdown of Three.js</title>
+    <style>
+        body {
+            margin: 0;
+        }
 
-            html, body {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
+        canvas {
+            width: 100%;
+            height: 100%
+        }
+    </style>
+</head>
+<body>
 
-            #container {
-                height: 100%;
-            }
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.min.js"></script>
+<script>
+var camera;
+var scene;
+var renderer;
+var mesh;
 
-        </style>
-    </head>
-    <body>
-        <div id="container"></div>
+init();
+animate();
 
-        <!-- Include the threejs custom build -->
-        <script src="forgejs/lib/three.js/three.custom.min.js"></script>
+function init() {
 
-        <!-- Include the Hammer.js library -->
-        <script src="forgejs/lib/hammer.js/hammer.min.js"></script>
+scene = new THREE.Scene();
+camera = new THREE.PerspectiveCamera( 20, window.innerWidth / window.innerHeight, 1, 1000);
 
-        <!-- Include the ForgeJS library -->
-        <script src="forgejs/build/forge.js"></script>
+var light = new THREE.DirectionalLight( 0xffffff );
+light.position.set( 0, 1, 1 ).normalize();
+scene.add(light);
 
-        <script>
 
-            // Creation of the FORGE.Viewer
-            var viewer = new FORGE.Viewer("container","config.json");
+var geometry = new THREE.CubeGeometry( 4, 4, 4);
+var material = new THREE.MeshPhongMaterial( {color: 0x2gg3ff, specular: 0x555555, shininess: 30} );
 
-        </script>
-    </body>
+mesh = new THREE.Mesh(geometry, material );
+mesh.position.z = -50;
+scene.add( mesh );
+
+renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
+
+window.addEventListener( 'resize', onWindowResize, false );
+
+render();
+}
+
+function animate() {
+mesh.rotation.x += .005;
+mesh.rotation.y += .005;
+
+render();
+requestAnimationFrame( animate );
+}
+
+function render() {
+renderer.render( scene, camera );
+}
+
+function onWindowResize() {
+camera.aspect = window.innerWidth / window.innerHeight;
+camera.updateProjectionMatrix();
+renderer.setSize( window.innerWidth, window.innerHeight );
+render();
+}
+</script>
+</body>
+
+
 </html>
