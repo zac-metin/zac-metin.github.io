@@ -1,0 +1,49 @@
+<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+
+<a-scene>
+  <a-assets>
+    <img id="boxTexture" src="http://i.imgur.com/8jyyG0h.png">
+    <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+  </a-assets>
+  <a-box position="0 2 -5" rotation="0 45 45" scale="2 2 2" src="#boxTexture">
+    <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
+      to="0 2.2 -5"></a-animation>
+    <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+    <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+    <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+  </a-box>
+  <a-sky height="1024" radius="30" color="#4CDBB0" theta-length="90" width="1024"></a-sky>
+  <a-light type="ambient" color="#445451"></a-light>
+  <a-light type="point" intensity="2" position="2 4 4"></a-light>
+  <a-plane color="#CCCCCC" rotation="-90 0 0" height="100" width="100"></a-plane>
+  <a-text value="<- Motivation ->" color="#BBB"
+          position="-0.9 0.4 -3" scale="1.5 1.5 1.5"></a-text>
+  <a-text name="text1" align="center"
+  value="Core Values:\n
+  I think the most important value to me is Self-Awareness, as so many other positive values stem from that.\n\n If you don't have self-awareness, you can't really begin to work on other aspects of yourself because you aren't aware of any what might need work.Other core values that I think are important are empathy, kindness and motivation.\n
+  These three are values that I think are direct results of self-awareness. Empathy is being able to consider how other people may feel in certain situations by understanding how you would feel if you yourself were in that situation. Kindness involves an awareness of how your behaviour benefits others, and motivation is driven by being aware of what
+  is important to us in life.
+  " color="#000"
+              height="3" position="7.60 2.24 4.02" rotation="0 -90 0" scale="2 2 2" width="5" wrap-count="80">
+            </a-text>
+  <a-text name="text2" align="center"
+  value="What I stand for:\n
+  I think what is most important to me is the notion of wellbeing being the ideal priority of society. At the moment I think it isn't. I don't think there is anything inherently wrong with wealth accumulation but I think it's pretty messed up that people can collect billions for themselves while others live in poverty, often as a direct result of the exploitation that makes people billionaires in the first place.
+  \nI think there is a problem in the way society presents life and life-goals, and the heavy glorification of chasing short-lived pleasure-derived happiness. More people need to find happiness in non-material aspects of life, and especially in helping others, whether humans or animals, to improve their quality of life.
+  \nI think if more people realized that having a normal home or a $20 million dollar mansion is going to make no real difference in their life (as they will simply get used to it and it will just be
+  normal after a while), whereas if they spent that money on helping others, the happiness would not be fleeting and they would be making the world a better place as well.
+  "
+  color="#000" height="3" position="-7.60 2.24 4.02" rotation="0 90 0" scale="2 2 2" width="5" wrap-count="80">
+                      </a-text>
+<a-text name="text3" align="center"
+                      value="Resilience and Other Musings:\n
+The idea of resilience and not considering failure as failure is something that I've been actively working on for the past couple of years so its good to go back over it again and see that I've actually implemented a lot of the stuff I read without realizing I had taken as much on board as I had. I think the same has also happened with Dev Academy. I am always thinking about how much I have yet to learn that I\n
+haven't spent enough time looking back at how far we have all come in just 7 weeks. It's actually kinda ridiculous that some javascript stuff is just basic second-nature now whereas before it used to cause my brain to shut-down in a matter of minutes. I think the expectation of learning a lot in a very short space of time has also played a role in this, we have come into this course prepared to learn a lot and so all of our behaviours will automatically be inline with those of someone who believes they can learn a lot in a short space of time.
+"
+  color="#000" height="3" position="0 2.24 10.50" rotation="0 180 0" scale="2 2 2" width="5" wrap-count="80">
+                      </a-text>
+
+  <a-camera>
+    <a-cursor color="#FAFAFA">
+  </a-camera>
+</a-scene>
