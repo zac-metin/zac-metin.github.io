@@ -1,0 +1,43 @@
+<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+
+<a-scene>
+  <a-assets>
+    <img id="boxTexture" src="http://i.imgur.com/8jyyG0h.png">
+    <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+  </a-assets>
+  <a-box position="0 2 -5" rotation="0 45 45" scale="2 2 2" src="#boxTexture">
+    <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
+      to="0 2.2 -5"></a-animation>
+    <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+    <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+    <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+  </a-box>
+  <a-sky height="1024" radius="30" color="#5656FF" theta-length="90" width="1024"></a-sky>
+  <a-light type="ambient" color="#445451"></a-light>
+  <a-light type="point" intensity="2" position="2 4 4"></a-light>
+  <a-plane color="#CCCCCC" rotation="-90 0 0" height="100" width="100"></a-plane>
+  <a-text value="<- Connecting ->\nMove around with Arrow Keys\nClick and Drag to look around" color="#BBB"
+          position="0.27 0.4 -3" scale="1 1 1" align="center"></a-text>
+  <a-text name="text1" align="center"
+  value="Increasing Trust:\n
+In the past I've tried something like the Loving Kindness Meditation while walking down the street, and not knowing it was a technique but just trying to empathize deeply with strangers. I think I am by default not very trusting, I wish I was more open and kind with people I don't know. It usually takes a while before I can relax and trust people, but I'm slowly fixing this and was definitely worse at this even six months ago.\n" color="#000"
+              height="3" position="7.60 2.24 4.02" rotation="0 -90 0" scale="2 2 2" width="5" wrap-count="80">
+            </a-text>
+  <a-text name="text2" align="center"
+  value="Political Awareness:\n
+  I actually failed this exercise at first trying it with a very serious situation where I am confident that the other side is actually morally indefensible. I do believe this is rare though and in most conflicts both sides are understandable.\n
+  For a somewhat trivial situation, I recently bought a phone on TradeMe to play around with coding for VR and the gyroscopes weren't working so it was basically useless for the sole purpose I bought it. Right from getting the phone I had a wtf reaction as the guy was supposed to have factory reset it but when testing the camera there was a video of him eating chicken wearing a gold chain and no shirt and dangling man-boobs. Why would anyone film that??? Not a great start...\n
+  So after I found out it was defective, he didn't want to refund me because he had no clue what VR was and was claiming that the phone didn't 'have VR' even though its not a feature in itself. Eventually I managed to convince him but I was disappointed in myself for getting angry, as he was just an old dude who didn't really understand how technology works and thought I was trying to get a refund because the phone didn't have something that he didn't think it actually had anyway.
+  "
+  color="#000" height="3" position="-7.60 2.24 4.02" rotation="0 90 0" scale="2 2 2" width="5" wrap-count="80">
+                      </a-text>
+<a-text name="text3" align="center"
+                      value="Empathetic Listening:\n
+I think I actually described this in an earlier blog before I knew what it was called, but I think its really cool how the process of developing self-awareness has almost a set-out path that you end up going down if you stick with it, this book has formalized so many practices that I found to naturally spring up while working on self-awareness. It's kinda cheesy but I actually think this is the path of humanity and our evolution and if we don't embrace this path we are going to destroy ourselves and everything on our planet. That escalated a bit too quickly :)"
+  color="#000" height="3" position="0 2.24 10.50" rotation="0 180 0" scale="2 2 2" width="5" wrap-count="80">
+                      </a-text>
+
+  <a-camera>
+    <a-cursor color="#FAFAFA">
+  </a-camera>
+</a-scene>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Language</title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body style="background-image:url(time.png)">
+        <div class="blogpost">
+    <h1 align="center">Scope</h1>
+    <p align="center">
+Scope is Javascript's way of placing limitations on variables. These poor innocent variables think they are unique and that they can do anything and be anything.
+But once Javascript makes these variables local, they are limited and another version of the same variable can exist in a different function locally. It's not right.
+    </p>
+  <p align="center">
+Global variables can be accessed from anywhere, although there can be multiple versions of that variable getting modified by different functions. I think. That may actually be wrong but hopefully it isn't.
+Local variables are only accessible within the function they are contained in, although sub-functions can access it too. I see it as a bubble where the main js file is a bubble where global variables exist, but if
+you want to put the variable inside another bubble - a function - you can. And a variable can be accessed in smaller bubbles but can't escape into outer bubbles. I'm gonna save this analogy for job interviews.<br><br>
+There are also block level variables if you use let instead of var to declare your variable or function. Basically everything I just wrote you can replace the word variable with function and it still applies hopefully. I don't know enough about Javascript to assert that with full confidence.
+  </body>
+</html>
