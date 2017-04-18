@@ -22,8 +22,16 @@ function regenerate()
 };
 
 function randomColour() {
+  /*
+    this was my solution but it came up with shitty colours only
+    (as it only used numbers not letters as well)
+    so instead I 'borrowed' the one below :D
     var color = '#' + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10) + Math.floor(Math.random() * 10);
     return color;
+  */
+  var color ='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6)
+  return color;
+  console.log(color);
 };
 function makeBox(){
           box = document.createElement('a-box');
@@ -33,7 +41,7 @@ function makeBox(){
           box.setAttribute('height', Math.random() * shapeMaxSize);
           box.setAttribute('depth', Math.random() * shapeMaxSize);
           box.setAttribute('position', ((Math.random() * gridSize) - (Math.random() * gridSize)) + ' ' + ((Math.random() * gridSize) - (Math.random() * gridSize)) + ' ' + ((Math.random() * gridSize) - (Math.random() * gridSize)));
-          
+
 }
 function makeSphere(){
           sphere = document.createElement('a-sphere');
@@ -41,6 +49,12 @@ function makeSphere(){
           sphere.setAttribute('color', randomColour());
           sphere.setAttribute('radius', Math.random() * shapeMaxSize);
           sphere.setAttribute('position', ((Math.random() * gridSize) - (Math.random() * gridSize)) + ' ' + ((Math.random() * gridSize) - (Math.random() * gridSize)) + ' ' + ((Math.random() * gridSize) - (Math.random() * gridSize)));
+          /* animation= document.createElement('a-animation');
+          sphere.appendChild(animation);
+          animation.setAttribute('attribute','rotation');
+          animation.setAttribute('dur', 10000);
+          animation.setAttribute('to', 360+' '+360+' '+360);
+          animation.setAttribute('repeat', "indefinite"); */
 }
 function makeTetrahedron(){
           tetrahedron = document.createElement('a-tetrahedron');

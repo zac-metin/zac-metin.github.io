@@ -7,10 +7,18 @@
   </head>
   <body>
     <a-scene>
+
             <a-camera>
               <a-cursor color="#FAFAFA">
-            </a-camera>
 
+            </a-camera>
+            <a-text value="Refresh Me!" color="#111111" position="0.27 0.4 -3" scale="1 1 1" align="center">
+              <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
+                to="0 2.2 -5"></a-animation>
+              <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+              <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+              <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+            </a-text>
       <a-entity id="shapeCanvas"></a-entity>
 
 
