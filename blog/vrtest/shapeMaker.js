@@ -1,6 +1,6 @@
-var gridSize = 100,
+var gridSize = 5000,
 shapeMaxSize = 8,
-shapeQuantity = 111;
+shapeQuantity = 1000000000;
 var sCanvas = document.querySelector('#shapeCanvas');
 document.querySelector('a-scene').addEventListener('render-target-loaded', generateShapes());
 document.querySelector('a-scene').addEventListener('click', regenerate());
