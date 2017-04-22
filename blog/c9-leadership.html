@@ -1,0 +1,41 @@
+<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+
+<a-scene>
+  <a-assets>
+    <img id="boxTexture" src="http://i.imgur.com/8jyyG0h.png">
+    <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+  </a-assets>
+  <a-box position="0 2 -5" rotation="0 45 45" scale="2 2 2" src="#boxTexture">
+    <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
+      to="0 2.2 -5"></a-animation>
+    <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+    <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+    <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+  </a-box>
+  <a-sky height="1024" radius="30" color="#FF4242" theta-length="90" width="1024"></a-sky>
+  <a-light type="ambient" color="#445451"></a-light>
+  <a-light type="point" intensity="2" position="2 4 4"></a-light>
+  <a-plane color="#CCCCCC" rotation="-90 0 0" height="100" width="100"></a-plane>
+  <a-text value="<- Connecting ->\nMove around with Arrow Keys\nClick and Drag to look around" color="#BBB"
+          position="0.27 0.4 -3" scale="1 1 1" align="center"></a-text>
+  <a-text name="text1" align="center"
+  value="Compassionate Leadership:\n
+I've pretty much always been self-employed so actually have little to no experience in leading or being led, so I'm pretty unqualified to comment on this. I have had people I know quit jobs due to the typical jerk leader model not being effective at all.\n" color="#000"
+              height="3" position="7.60 2.24 4.02" rotation="0 -90 0" scale="2 2 2" width="5" wrap-count="80">
+            </a-text>
+  <a-text name="text2" align="center"
+  value="Multiplying Goodness and Tonglen:\n
+Multiplying Goodness meditation was great! It reminded me of the happiest moment of my life which ironically I was doing nothing in, and it was when it dawned on me that I didn't actually need external conditions to feel total elation, and that realization brought on overwhelming happiness. So yeah, the happiest moment of my life is grinning like an idiot while lying on my bed doing literally nothing. 'Get better work stories?'\n
+Tonglen was a bit more difficult because negative emotions almost seem to have a weight to them that makes it hard to go from there to the lightness of happiness and goodness."
+  color="#000" height="3" position="-7.60 2.24 4.02" rotation="0 90 0" scale="2 2 2" width="5" wrap-count="80">
+                      </a-text>
+<a-text name="text3" align="center"
+                      value="SCARF:\n
+I never liked when people try to make these know-it-all behavioural paradigms (especially acronym based paradigms). It's like there's some implied smugness in reducing complex human interaction to a few letters. Burn the SCARF I say. It's not for me."
+  color="#000" height="3" position="0 2.24 10.50" rotation="0 180 0" scale="2 2 2" width="5" wrap-count="80">
+                      </a-text>
+
+  <a-camera>
+    <a-cursor color="#FAFAFA">
+  </a-camera>
+</a-scene>
