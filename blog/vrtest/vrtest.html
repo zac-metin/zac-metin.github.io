@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
+
   <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-<title>Artwork</title>
-<meta charset="UTF-8">
 
-</head>
-<body id="scene">
+  <a-scene>
+    <a-assets>
 
+          <a-asset-item id="dev" src="DevAcademy.dae"></a-asset-item>
 
-</body>
+    </a-assets>
+    <a-light type="ambient" color="#445451"></a-light>
+    <a-light type="point" intensity="2" position="2 4 4"></a-light>
+
+            <a-collada-model src="#dev"></a-collada-model>
+
+    <a-camera>
+      <a-cursor color="#FAFAFA">
+    </a-camera>
+  </a-scene>
+
 </html>
