@@ -7,12 +7,12 @@
   <a-scene>
     <a-assets>
 
-          <a-asset-item id="dev" src="DevClassroom.dae"></a-asset-item>
+          <a-asset-item id="dev" src="DevClassroom.gltf"></a-asset-item>
     </a-assets>
     <a-light type="ambient" color="#445451"></a-light>
     <a-light type="point" intensity="2" position="2 4 4"></a-light>
 
-            <a-collada-model src="#dev"></a-collada-model>
+            <a-entity gltf-model src="#dev"></a-entity>
 
     <a-camera>
       <a-cursor color="#FAFAFA">
