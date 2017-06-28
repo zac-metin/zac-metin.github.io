@@ -12,18 +12,47 @@
 }
 h1 {
   font-size: 65px;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: underline;
+  padding-top: 15px;
+}
+h3 {
+  font-family: 'Lato';
+}
+p {
+  padding-top: 25px;
+  font-family: 'Lato';
+  font-size: 18px;
+  font-weight: normal;
 }
 #marble {
   background: url('http://www.marble.com/art/wp-content/uploads/img/CALACATTA%20BORGHINI%20005R%20GLOSSY%20DONE%20WEB.jpg');
   color: #51585C;
+  text-shadow: 2px 2px #EEEAF7;
+}
+#marbleopaque {
+  background-color: rgba(238,234,247, 0.6);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 15px;
+  padding-bottom: 15px;
 }
 #blue {
   background: url('https://cdn.pixabay.com/photo/2016/10/16/06/29/blue-1744530_1280.jpg');
   color: #EEEAF7;
+  text-shadow: 2px 2px #51585C;
+}
+#blueopaque {
+  background-color: rgba(44,150,212, 0.3);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 15px;
+  padding-bottom: 15px;
 }
 #grey {
   background: url('http://ewaygallery.com/admin/productgallery_img/large/1856198352black-forest-granite-with-innovative-black-forest-decoration.jpg');
-  color: #9AD9F8;
+  color: #EEEAF7;
+  text-shadow: 2px 2px #51585C;
 }
 
 .container-full
@@ -32,7 +61,7 @@ h1 {
   margin: 0px;
   width: 100%;
 }
-img
+.cvimage
 {
-  width: 100%
+  width: 10vw;
 }
