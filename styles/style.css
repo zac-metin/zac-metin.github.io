@@ -10,6 +10,9 @@
   display: inline-block;
   height: 400px;
 }
+.workbox {
+  height: 440px;
+}
 h1 {
   font-size: 65px;
   font-family: 'Oswald', sans-serif;
@@ -52,7 +55,6 @@ p {
 #grey {
   background: url('http://ewaygallery.com/admin/productgallery_img/large/1856198352black-forest-granite-with-innovative-black-forest-decoration.jpg');
   color: #EEEAF7;
-  text-shadow: 2px 2px #51585C;
 }
 
 .container-full
@@ -61,7 +63,26 @@ p {
   margin: 0px;
   width: 100%;
 }
+.work {
+  margin-top: 55px;
+}
 .cvimage
 {
   width: 10vw;
+}
+.gitimage
+{
+  width: 10vw;
+  border-radius: 10px;
+}
+
+.link {
+  margin-top: 20px;
+  padding: 0px 0px 0px 0px;
+  background-color: rgba(35,35,35,1);
+}
+.padtop {
+  margin-top: 240px;
+  padding: 0px 0px 0px 0px;
+  font-style: italic;
 }
