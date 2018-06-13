@@ -77,9 +77,12 @@ function getAddressClientside() {
       xhr.open("GET", requestUrl, true);
 
       xhr.setRequestHeader("x-nab-key", nabApiKey);
+      xhr.setRequestHeader("Allow-Access-Cross-Origin", *);
 
       xhr.send();
 
+      console.log(xhr);
+      console.log(xhr.response);
       console.log(xhr.responseText);
 
 }
