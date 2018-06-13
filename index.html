@@ -65,7 +65,27 @@
 </div>
 </div> <!-- closing of overall webpage container -->
 
+<script>
+getAddressClientside() {
 
+      var xhr = new XMLHttpRequest();
+      var nabApiKey = "fd380615-0c99-472f-bf96-2831d32a4b9d";
+      var requestUrl = "https://api.nab.com.au/info/address/suggest/AU/105 Miller Street?v=1";
+
+      console.log(requestUrl);
+
+      xhr.open("GET", requestUrl, true);
+
+      xhr.setRequestHeader("x-nab-key", nabApiKey);
+
+      xhr.send();
+
+      console.log(xhr.responseText);
+
+}
+
+getAddressClientside();
+</script>
 </body>
 
 </html>
